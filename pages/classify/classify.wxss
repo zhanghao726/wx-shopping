@@ -1,0 +1,81 @@
+/* pages/classify/classify.wxss */
+page{
+  height: 100%;
+}
+.classify-page{
+  height: 100%;
+  display: flex;
+  flex: 1;
+}
+.classify-left{
+  height: 100%;
+  width: 134rpx;
+  position: fixed;
+  border-right: 1px solid #ccc;
+}
+.classify-left view{
+  font-size: 32rpx;
+  padding: 20rpx 30rpx;
+  margin: 20rpx 0;
+}
+.classIscheck{
+  color: #91cfda;
+  border-left: 6rpx solid #91cfda;
+}
+
+/*右侧内容  */
+
+.classify-right{
+  width: 536rpx;
+  padding: 40rpx;
+  margin-left: 134rpx;
+}
+.classify-right .banner{
+  height: 240rpx;
+
+}
+.classify-right .banner image{
+  width: 100%;
+  height: 100%;
+}
+.center-text{
+  width: 300rpx;
+  height: 60rpx;
+  margin: 0 auto;
+  border-bottom: 4rpx solid #91cfda;
+  position: relative;
+}
+.center-text text{
+  display: block;
+  width: 160rpx;
+  left: 70rpx;
+  text-align: center;
+  top: 38rpx;
+  color: #91cfda;
+  font-size: 32rpx;
+  background-color: #fff;
+  position: absolute;
+}
+
+/*内容列表  */
+.list-content{
+  margin: 80rpx 0 0 10rpx;
+  float: left;
+  width: 160rpx;
+  height: 160rpx;
+}
+.list-content image{
+  width: 80rpx;
+  height: 80rpx;
+  display: block;
+  margin: 0 auto;
+
+}
+.list-content text{
+  display: block;
+  width: 160rpx;
+  height: 30rpx;
+  font-size: 20rpx;
+  text-align: center;
+  overflow: hidden;
+}

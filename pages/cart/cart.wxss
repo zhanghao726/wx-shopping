@@ -1,0 +1,88 @@
+/* pages/cart/cart.wxss */
+
+.cartList{
+  font-size: 28rpx;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20rpx;
+  border-bottom: 2rpx solid #ccc;
+  padding-bottom: 30rpx; 
+}
+.cartList-box{
+  padding-bottom: 120rpx;
+}
+.cartList .icon-box{
+  width: 40rpx;
+  height: 40rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+   border-radius: 50%; 
+}
+.cartList-img-box{
+  height: 200rpx;
+  width: 200rpx;
+}
+.cartList-img-box image{
+  height: 100%;
+  width:100%;
+}
+.list-top,.list-bottom{
+  width: 400rpx;
+}
+.list-middle{
+  margin: 30rpx 0;
+}
+.list-middle text{
+  width: 100rpx;
+  
+  padding: 0 20rpx;
+  margin-right: 1rpx;
+}
+.list-bottom text{
+  font-size: 36rpx;
+  display: inline-block;
+  width: 100rpx;
+  text-align: center;
+  
+}
+.list-top .price{
+  display: inline-block;
+  float: right;
+}
+.cart-page-bottom{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  font-size: 28rpx;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10rpx;
+  box-sizing: border-box;
+  background-color: rgba(145, 207, 218,1);
+  color: #fff;
+}
+.cart-page-bottom .icon-box{
+  display: flex;
+  width: 150rpx;
+  align-items: center;
+}
+.right-box{
+  display: flex;
+  align-items: center;
+}
+.right-box navigator{
+  margin: 0 40rpx 0;
+  width: 50rpx;
+  height: 50rpx;
+  display: inline-block;
+  text-decoration: underline;
+}
+.right-box navigator image{
+  width: 100%;
+  height: 100%;
+}

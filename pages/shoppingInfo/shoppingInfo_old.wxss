@@ -1,0 +1,103 @@
+/* pages/shoppingInfo/shoppingInfo.wxss */
+page{
+  height: 100%;
+  background-color: #91cfda;
+}
+.shoppingInfo-top{
+  background-color: #fff;
+}
+.shoppingInfo-top .image-box{
+  position: relative;
+  width: 300rpx;
+  height: 300rpx;
+  margin: 0 auto;
+  padding: 80rpx 0 120rpx;
+}
+.shoppingInfo-top .image-box image{
+  width: 100%;
+  height: 100%;
+}
+.cart-img-box{
+  width: 92rpx;
+  height: 92rpx;
+  left: 380rpx;
+  top: 80rpx;
+  position: absolute;
+}
+.cart-totalNum{
+  position: absolute;
+  left: 410rpx;
+  top: 80rpx;
+  padding: 6rpx 16rpx;
+  font-size: 24rpx;
+  background-color: #91cfda;
+  color: #fff;
+  border-radius: 50%;
+}
+/*中间操作  */
+.shoppingInfo-handle{
+  background-color: #91cfda;
+  width: 88%;
+  margin: 0 auto;
+  color: #fff;
+  padding: 20rpx 10rpx;
+  border-radius: 40rpx;
+  font-size: 28rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-around
+}
+.shoppingInfo-handle .add,.shoppingInfo-handle .minus{
+  font-size: 40rpx;
+}
+.shoppingInfo-handle view{
+  width: 45rpx;
+  height: 45rpx;
+}
+.shoppingInfo-handle view image{
+  width: 100%;
+  height: 100%;
+}
+
+/*有无货  */
+.textCenter{
+  text-align: center;
+  margin: 20rpx 0;
+  font-size: 28rpx;
+}
+.name{
+  font-size: 36rpx;
+}
+.price{
+  font-size:32rpx;
+  font-weight: bold;
+  padding-bottom: 20rpx;
+}
+
+/*底部信息  */
+.shoppingInfo-bottom{
+  background-color: #fff;
+  height: 400rpx;
+}
+.shoppingInfo-bottom .tab{
+  display: flex;
+  justify-content: space-around;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 32rpx;
+  color: #CCC;
+  border: 1px solid #ccc;
+}
+.shoppingInfo-active{
+  color: #91cfda;
+  border-bottom:2px solid #91cfda;
+
+}
+.shoppingInfo-bottom text{
+  padding: 0 20rpx; 
+}
+.tab-content text{
+  display: inline-block;
+  margin-top: 40rpx;
+  font-size: 32rpx;
+}

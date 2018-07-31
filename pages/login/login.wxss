@@ -1,0 +1,29 @@
+/* pages/login/login.wxss */
+.login-page{
+
+}
+.image-box{
+  margin: 0 auto;
+  width: 270rpx;
+  height: 270rpx;
+}
+.image-box image{
+  margin: 0 auto;
+  width: 270rpx;
+  height: 270rpx;
+}
+.login-title-box{
+  text-align: center;
+}
+.login-go-btn-box{
+  margin:100rpx 0 0; 
+}
+.login-go-btn{
+  width: 200rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size:28rpx; 
+}
+.login-summary{
+  font-size: 32rpx;
+}

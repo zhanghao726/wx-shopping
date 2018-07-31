@@ -1,0 +1,46 @@
+<!--index.wxml-->
+<import src="../../template/list/list"/>
+
+<view class="index-page">
+<!--banner图  -->
+  <swiper indicator-dots="true"
+  autoplay="true" interval="2000" duration="500" circular="true" 
+  previous-margin="1rpx" next-margin="1rpx">
+    <block wx:for="{{bannerImgUrls}}" wx:key="{{index}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" width="100%"/>
+      </swiper-item>
+    </block>
+  </swiper>
+<!--搜索框  -->
+  <view>
+    <navigator class='search-box' url='../search/search' hover-class='none'>
+      <view class='search-text'>
+        <icon type='search' size='14' />
+        <text>搜索</text>
+      </view>
+    </navigator>
+  </view> 
+
+<!--精选主题  -->
+  <view class='fine-box'>
+    <text class='fine-title'>精选主题</text> 
+    <view class='fine-img-box'>
+      <navigator wx:for='{{goodSmallImgUrls}}' wx:key="{{index}}" url="../productList/productList?type={{item.category}}">
+        <image src='{{item.imgUrl}}'></image>
+      </navigator>
+    
+    </view>
+    <view class='fine-img-box fine-img-big'>
+      <navigator url="../productList/productList">
+        <image src='{{goodBigImgUrls}}'></image>
+      </navigator>
+    </view>
+  </view> 
+<!--最近新品  -->
+
+  <view>
+    <text class='fine-title'>最近新品</text>
+    <template is="list" data="{{...listArr}}"></template>
+  </view>
+</view>

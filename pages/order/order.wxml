@@ -1,0 +1,36 @@
+<!--pages/order/order.wxml-->
+<view class='order-page'>
+  <view class='order-tab'>
+    <text class='{{tabIndex == 0?"order-tab-active":""}}' bindtap='changeTab' data-index='0'>已支付</text>
+    <text class='{{tabIndex == 1?"order-tab-active":""}}' bindtap='changeTab' data-index='1'>待支付</text>
+  </view>
+  <view class='order-list paid' wx:if="{{tabIndex == 0}}">
+    <view class='order-num'>订单编号：65656a65655564564545</view>
+    <view class='order-info'>
+      <view><image src='../../image/list1.png'></image></view>
+      <view>
+        <view class='order-list-name'>梨花带雨</view>
+        <view class='order-list-num'>数量5</view>
+      </view>
+      <view>
+        <view>已付款</view>
+        <view>实付：￥5</view>
+      </view>
+    </view>
+  </view>
+
+  <view class='order-list paying' wx:if="{{tabIndex == 1}}">
+    <view class='order-num'>订单编号：65656a65655564564545</view>
+    <view class='order-info'>
+      <view><image src='../../image/list1.png'></image></view>
+      <view>
+        <view class='order-list-name'>梨花带雨</view>
+        <view class='order-list-num'>数量5</view>
+      </view>
+      <view>
+        <view>代付款</view>
+      </view>
+    </view>
+    <view class='order-num'>需付款：￥  <button class='paybtn'>付款</button></view>
+  </view>
+</view>

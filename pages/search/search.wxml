@@ -1,0 +1,17 @@
+<!--pages/search/search.wxml-->
+<view>
+  <view class='search-box'>
+    <input wx:value='searchText' bindInput="bindInputText"/>
+    <icon type='search' size='16' class='searchIcon'></icon>
+  </view>
+  <view class='search-bottom'>
+    <text class='search-bottom-title'>搜索记录</text>
+    <text class='search-tag'>大红枣</text>
+    <text class='search-tag'>新鲜芹菜</text>
+  </view>
+   <view class='search-bottom'>
+    <text class='search-bottom-title'>热点推荐</text>
+    <text class='search-tag'>新鲜芹菜</text>
+    <text class='search-tag'>大红枣</text>
+  </view>
+</view>

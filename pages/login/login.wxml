@@ -1,0 +1,19 @@
+<!--pages/login/login.wxml-->
+<view class='login-page'>
+  <view class='image-box'>
+    <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1530507015551&di=89893d10600da5e83b8e741c08c8663d&imgtype=0&src=http%3A%2F%2Fimg.mp.itc.cn%2Fupload%2F20161115%2F6163765431c44d538b37d6efb32ee885_th.jpg'></image>
+  </view>
+  <view class='login-title-box'>
+    <text class='login-title'>
+      欢迎光临xx商城
+    </text>
+  </view>
+  <view class='login-go-btn-box'>
+    <button class='login-go-btn' open-type='getUserInfo' bindgetuserinfo='bindgetuserinfo'>进入商城</button>
+  </view> 
+  <view class='login-summary-box'>
+    <text class='login-summary'>
+      xx商城简介：
+    </text>
+  </view>
+</view>

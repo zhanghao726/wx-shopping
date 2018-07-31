@@ -1,0 +1,160 @@
+/* pages/shoppingInfo/shoppingInfo.wxss */
+page{
+  height: 100%;
+  background-color: #91cfda;
+}
+.shoppingInfo-top{
+  background-color: #fff;
+}
+.shoppingInfo-top .image-box{
+  width: 100%;
+  height: 460rpx;
+
+}
+.shoppingInfo-top .image-box image{
+  width: 100%;
+  height: 400rpx;
+}
+.shoppingInfo-fixed-left{
+  position: relative;
+  width: 50rpx;
+  height: 80rpx;
+}
+.shoppingInfo-fixed-left image{
+  width: 100%;
+  height: 100%;
+}
+.cart-img-box{
+  width: 60rpx;
+  height: 60rpx;
+  left: 40rpx;
+  top: 10rpx;
+  position: absolute;
+}
+.cart-totalNum{
+  position: absolute;
+  width: 34rpx;
+  height: 34rpx;
+  line-height: 34rpx;
+  font-size: 24rpx;
+  text-align: center;
+  left: 86rpx;
+  top: 4rpx;
+  color: #fff;
+  background-color: #91cfda;
+  border-radius:50%; 
+
+}
+/*中间操作  */
+.shoppingInfo-handle{
+ 
+  color: #91cfda;
+  
+  font-size: 28rpx;
+  border-top:20rpx solid #ededed; 
+  border-bottom:20rpx solid #ededed; 
+}
+.classList{
+  display: flex;
+  color: #aaa;
+  margin: 20rpx 0; 
+}
+.classList .classList-name,.classList view text{
+  display: inline-block;
+  width: 120rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 28rpx;
+  text-align: center;
+  margin: 10rpx 12rpx;
+  padding: 6rpx 0;
+}
+.classList view text{
+  background-color: #f2f2f2;
+}
+.classList .add,.classList .minus,.classList .number,.classList .stock{
+  color: #91cfda;
+  background-color: #fff;
+}
+.classList .add,.classList .minus{
+  width: 40rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  padding:0;
+  border-radius: 50%;
+  border: 2rpx solid #91cfda;
+}
+.classList .stock{
+  width: 200rpx;
+}
+.classSelected{
+  background-color: #91cfda!important;
+  color: #fff!important;
+}
+
+.shoppingInfo-handle view image{
+  width: 100%;
+  height: 100%;
+}
+
+/*有无货  */
+
+.name{
+  font-size: 32rpx;
+  padding: 20rpx;
+}
+.price{
+  padding: 0 20rpx;
+  font-size:40rpx;
+  color: #91CFDA;
+  padding-bottom: 20rpx;
+}
+
+/*底部信息  */
+.shoppingInfo-bottom{
+  background-color: #fff;
+  height: 400rpx;
+}
+.shoppingInfo-bottom .tab{
+  display: flex;
+  justify-content: space-around;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 32rpx;
+  color: #CCC;
+  border-bottom: 1px solid #ccc;
+}
+.shoppingInfo-active{
+  color: #91cfda;
+  border-bottom:2px solid #91cfda;
+
+}
+.shoppingInfo-bottom text{
+  padding: 0 20rpx; 
+}
+.tab-content text{
+  display: inline-block;
+  margin-top: 40rpx;
+  font-size: 32rpx;
+}
+
+.shoppingInfo-fixed{
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  height: 80rpx;
+  color: #91cfda;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #E6E6E6;
+}
+.shoppingInfo-fixed text:last-child{
+  width: 300rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 32rpx;
+  text-align: center;
+  color: #fff;
+  background-color: #91cfda;
+}

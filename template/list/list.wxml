@@ -1,0 +1,10 @@
+<!--pages/component/list/list.wxml-->
+<template name="list">
+  <view class='new-product-box'>
+    <navigator url="../shoppingInfo/shoppingInfo?id={{item.id}}" class='new-product-list' wx:for='{{newProductData}}' wx:key="{{index}}">
+      <image src='{{item.imgUrl}}'></image>
+      <text>{{item.name}}</text>
+      <text>￥{{item.price}}</text>
+    </navigator>
+  </view> 
+</template>

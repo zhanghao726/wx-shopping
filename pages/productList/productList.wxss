@@ -1,0 +1,12 @@
+/* pages/prductList/productList.wxss */
+
+@import "../../template/list/list.wxss";
+
+.list-banner-box{
+  width: 100%;
+  height: 400rpx;
+}
+.list-banner-box image{
+  width: 100%;
+  height: 100%;
+}

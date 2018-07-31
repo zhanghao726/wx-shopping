@@ -1,0 +1,9 @@
+<!--pages/prductList/productList.wxml-->
+<import src='../../template/list/list'/>
+
+<view class='list-page'>
+  <view class='list-banner-box'>
+    <image src='{{listBanner}}'></image>
+  </view>
+  <template is='list' data='{{...listArr}}'></template>
+</view> 

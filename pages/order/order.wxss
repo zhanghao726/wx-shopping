@@ -1,0 +1,55 @@
+/* pages/order/order.wxss */
+.order-page{}
+.order-tab{
+  background-color: #eee;
+  color: #999;
+  height: 90rpx;
+  line-height: 90rpx;
+  font-size: 32rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rpx;
+}
+.order-tab text{
+  width: 50%;
+  text-align: center;
+}
+.order-tab-active{
+  background-color: #91CFDA;
+  color: #fff;
+}
+.order-list{
+  color: #999;
+  font-size: 28rpx;
+  box-sizing: border-box;  
+  border-bottom: 2rpx solid #ddd;
+}
+.order-num{
+  height: 90rpx;
+  line-height: 90rpx;
+  
+  margin-left: 60rpx;
+  margin-bottom: 20rpx;
+  text-indent: 8rpx;
+  border-bottom: 2rpx solid #eee;
+}
+.order-info{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.order-info image{
+  width: 140rpx;
+  height: 140rpx;
+}
+.paybtn{
+  background-color: #B42F2D;
+  color: #fff;
+  width: 160rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 32rpx;
+  float: right;
+  margin-right: 60rpx;
+}

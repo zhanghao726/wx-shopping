@@ -1,0 +1,36 @@
+/* pages/search/search.wxss */
+.search-box{
+  border: 1px solid #ccc;
+  width: 94%;
+  margin: 20rpx auto 0;
+  position: relative;
+}
+.search-box input{
+  width: 80%;
+  color: #aaa;
+  font-size: 28rpx;
+  margin: 0 40rpx 0;
+}
+.search-box icon{
+  top: 10rpx;
+  left: 6rpx;
+  position: absolute
+}
+
+/*搜索记录  */
+.search-bottom-title{
+  color: #91cfda;
+  display: block;
+  width: 150rpx;
+  margin: 40rpx 20rpx 20rpx;
+  border-bottom: 10rpx solid #91cfda;
+}
+.search-tag{
+  margin-left: 20rpx;
+  display: inline-block;
+  font-size: 28rpx;
+  color: #aaa;
+  border: 1px solid #ccc;
+  border-radius: 30rpx;
+  padding: 10rpx 20rpx;
+}

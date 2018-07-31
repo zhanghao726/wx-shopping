@@ -1,0 +1,24 @@
+/* pages/component/list/list.wxss */
+
+.new-product-list{
+  width: 325rpx;
+  height: 325rpx;
+  background-color: #f5f6f5;
+  display: flex;
+   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30rpx;
+  float: left;
+  margin: 25rpx;
+}
+.new-product-list image{
+  width: 60%;
+  height: 60%;
+}
+.new-product-list text{
+  width: 100%;
+  text-align: center;
+  display: block;
+  font-size: 28rpx;
+}

@@ -1,0 +1,77 @@
+<!--pages/shoppingInfo/shoppingInfo.wxml-->
+<view class='shoppingInfo-page'>
+  <view class='shoppingInfo-top'>
+    <swiper class='image-box' indicator-dots="true" indicator-color="#ccc" indicator-active-color="#91CFDA"
+       duration="300">
+      <block wx:for='{{singleProductData.imgUrls}}' wx:key="{{index}}">
+        <swiper-item>
+          <image src='{{item}}'></image>
+        </swiper-item>
+      </block>
+    </swiper>
+
+    <view class='name'>{{singleProductData.name}}  {{singleProductData.summary}}</view>
+    <view class='price'>单价：￥{{singleProductData.price}}</view>
+
+     <view class='shoppingInfo-handle'>
+
+      <view class='classList' wx:for="{{singleProductData.classListData}}" wx:key="{{index}}">
+        <text class='classList-name'>{{item.className}}</text>
+        <view>
+          <text 
+            wx:for="{{item.childName}}" 
+            wx:key="{{ind}}" 
+            wx:for-item="childItem"
+            wx:for-index="ind"
+            data-partentid="{{item.classId}}"
+            data-select="{{childItem}}"
+            data-partentindex="{{index}}"
+            data-ind="{{ind}}"
+            bindtap="selectClass"
+            class="{{item.selectIndex == ind?'classSelected':''}}"
+            >{{childItem}}</text>
+        </view>
+      </view>
+    
+      <view class='classList'>
+        <text class='classList-name'>数量</text>
+        <view>
+          <text class='minus' bindtap='productNumCount' id="0">-</text>
+          <text class='number'>{{singleProductData.productNum}}</text>
+          <text class='add' bindtap='productNumCount' id='1'>+</text>
+          <text class='stock'>库存{{singleProductData.stockNum}}</text>
+        </view>
+      </view>
+      
+    </view>
+  </view>
+
+  <view class='shoppingInfo-bottom'>
+    <view class='tab'>
+      <text class='{{tabIndex==1?"shoppingInfo-active":""}}' bindtap='changeTabNav' id='1'>商品详情</text>  
+      <text class='{{tabIndex==2?"shoppingInfo-active":""}}' bindtap='changeTabNav' id='2'>产品参数</text>  
+      <text class='{{tabIndex==3?"shoppingInfo-active":""}}' bindtap='changeTabNav' id='3'>售后保障</text> 
+    </view>
+    <view wx:if='{{tabIndex==1}}' class='tab-content'>
+      <text>{{singleProductData.productInfo}}</text>
+    </view>
+    <view wx:if='{{tabIndex==2}}' class='tab-content'>
+      <text>{{singleProductData.productParameter}}</text>
+    </view>
+    <view wx:if='{{tabIndex==3}}' class='tab-content'>
+      <text>{{singleProductData.productSafeguard}}</text>
+    </view>
+     
+  </view>
+  <view class='shoppingInfo-fixed'> 
+    <navigator open-type='switchTab' url='../cart/cart'>
+      <view class='shoppingInfo-fixed-left'>
+        <view class='cart-img-box'><image src='../../image/cart_black.png'></image></view>
+        <view class='cart-totalNum'>{{singleProductData.productNum}}</view>
+      </view>
+    </navigator>
+    
+    <text>￥{{singleProductData.price*singleProductData.productNum}}</text>
+    <text bindtap='goToCart'>加入购物车</text>
+  </view>
+</view>     

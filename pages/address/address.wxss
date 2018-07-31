@@ -1,0 +1,54 @@
+/* pages/address/address.wxss */
+.address-page,page{
+  height: 100%;
+  background-color: #efefef;
+}
+.address-list{
+  background-color: #fff;
+  margin-top: 10rpx;
+  padding: 20rpx;
+  font-size: 28rpx;
+  position: relative;
+  border-bottom:2rpx solid #eee; 
+}
+.address-list .name{
+  font-size: 32rpx;
+  font-weight: bold;
+  margin-right: 20rpx; 
+}
+.address-list .detail{
+  margin-top: 20rpx;
+  margin-right: 20rpx;
+  color: #aaa;
+}
+.left-icon{
+  width: 26rpx;
+  height: 40rpx;
+  right: 40rpx;
+  top: 24rpx;
+  position: absolute;
+}
+.left-icon image{
+  width: 100%;
+  height: 100%;
+}
+.add-address{
+  position: fixed;
+  bottom: 0;
+  background-color: #fff;
+  width: 100%;
+  height: 120rpx;
+  line-height: 120rpx;
+  color: #91CFDA;
+  text-align: center;
+}
+.add-address text:first-child{
+  border: 1px solid #91CFDA;
+  width: 40rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 50%;
+  margin-right: 20rpx;
+}

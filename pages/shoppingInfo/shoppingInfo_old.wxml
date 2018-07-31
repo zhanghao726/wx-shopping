@@ -1,0 +1,38 @@
+<!--pages/shoppingInfo/shoppingInfo.wxml-->
+<view class='shoppingInfo-page'>
+  <view class='shoppingInfo-top'>
+    <view class='image-box'>
+      <image src='../../image/shoppingInfo1.png'></image>
+      <view bindtap='goToCart' class='cart-img-box'><image src='../../image/cart_black.png'></image></view>
+      <view bindtap='goToCart' class='cart-totalNum' wx:if="{{totalProdcutNum != 0}}">{{totalProdcutNum}}</view>
+    </view>
+    <view class='shoppingInfo-handle'>
+      <text class='minus' bindtap='productNumCount' id="0">-</text>
+      <text class='number'>数量　{{productNum}}</text>
+      <text class='add' bindtap='productNumCount' id='1'>+</text>
+      <text bindtap='addToCart'>加入购物车</text>
+      <view bindtap='addToCart'><image src='../../image/cart.png'></image></view>
+    </view>
+    <view class='ishas textCenter'>有货</view>
+    <view class='name textCenter'>商品的名字</view>
+    <view class='price textCenter'>￥0.01</view>
+  </view>
+
+  <view class='shoppingInfo-bottom'>
+    <view class='tab'>
+      <text class='{{tabIndex==1?"shoppingInfo-active":""}}' bindtap='changeTabNav' id='1'>商品详情</text>  
+      <text class='{{tabIndex==2?"shoppingInfo-active":""}}' bindtap='changeTabNav' id='2'>产品参数</text>  
+      <text class='{{tabIndex==3?"shoppingInfo-active":""}}' bindtap='changeTabNav' id='3'>售后保障</text> 
+    </view>
+    <view wx:if='{{tabIndex==1}}' class='tab-content'>
+      <text>这是商品详情</text>
+    </view>
+    <view wx:if='{{tabIndex==2}}' class='tab-content'>
+      <text>这是产品参数</text>
+    </view>
+    <view wx:if='{{tabIndex==3}}' class='tab-content'>
+      <text>这是售后保障</text>
+    </view>
+     
+  </view>
+</view>     

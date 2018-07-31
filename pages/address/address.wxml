@@ -1,0 +1,24 @@
+<!--pages/address/address.wxml-->
+<view class='address-page'>
+
+  <navigator 
+    wx:for="{{addressList}}" 
+    wx:key="{{index}}" 
+    url='../changeAddress/changeAddress?name={{item.name}}&phone={{item.phoneRegExp}}&city={{item.city}}&other={{item.other}}&sex={{item.sex}}' 
+    hover-class='none' 
+    class='address-list'>
+    <view class='address-content'>
+      <text class='name'>{{item.name}}</text>
+      <text class='tel'>{{item.phoneRegExp}}</text>
+      <view class='detail'>{{item.city}}</view>
+    </view>
+    <view class='left-icon'>
+      <image src='../../image/back_button.png'></image>
+    </view>
+  </navigator>
+
+  <navigator url='../changeAddress/changeAddress' hover-class='none' class='add-address'>
+    <text>+</text>
+    <text>新增地址</text>
+  </navigator>
+</view>

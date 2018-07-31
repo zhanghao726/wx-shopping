@@ -1,0 +1,43 @@
+/* pages/user/user.wxss */
+.user-top{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 400rpx;
+  background-color: #91CFDA;
+}
+.user-avator{
+  width: 160rpx;
+  height: 160rpx;
+  overflow: hidden;
+  border-radius:50%; 
+}
+.user-name{
+  color: #FFF;
+  font-size: 28rpx;
+  text-align: center;
+  margin-top: 50rpx;
+}
+.user-content{
+  margin-top:20rpx; 
+}
+.user-content navigator{
+  border-top: 1rpx solid #eee;
+  height: 90rpx;
+  line-height: 90rpx;
+  font-size: 28rpx;
+  text-align: center;
+  color: #bbb;
+  position: relative;
+}
+.user-content navigator:last-child{
+  border-bottom: 1rpx solid #eee;
+}
+.user-content navigator image{
+  width: 15rpx;
+  height: 30rpx;
+  position: absolute;
+  top: 32rpx;
+  right: 40rpx;
+}

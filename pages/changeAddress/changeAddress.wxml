@@ -1,0 +1,40 @@
+<!--pages/changeAddress/changeAddress.wxml-->
+<view class='changeAddress-page'>
+  <view class='changeAddress-list-box'>
+    <view class='changeAddress-list'>
+      <text class='title name'>联系人</text>
+      <view class='input-box'>
+        <input type='text' placeholder='姓名' value='{{addressData.name}}'/>
+      </view>
+      <view class='sex-box'>
+        <radio-group class="radio-group" bindchange="radioChange">
+          <label class="radio">
+            <radio value="{{item.sex}}" />{{addressData.sex}}
+          </label>
+          
+        </radio-group>
+      </view>
+    </view>
+    <view class='changeAddress-list'>
+      <text class='title'>电话</text>
+      <view class='input-box2'>
+        <input type='number' value='{{addressData.phone}}'></input>
+      </view>
+    </view>
+    <view class='changeAddress-list'>
+      <text class='title'>地址</text>
+      <view class='input-box2' bindtap='test'>{{addressData.city}}</view>
+    </view>
+    <view class='changeAddress-other'>
+      <text class='title'>补充说明</text>
+      <view>
+        <textarea placeholder="请输入详细的地址（如门牌号）" value='{{addressData.other}}' />
+      </view>
+    </view>
+  </view>
+
+  <view class='changeAddress-button'>
+    <button type='button'>删除</button>
+    <button type='button'>确定</button>
+  </view>
+</view>

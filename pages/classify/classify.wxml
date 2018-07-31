@@ -1,0 +1,41 @@
+<!--pages/classify/classify.wxml-->
+<view class='classify-page'>
+  <view class='classify-left'>
+    <view
+     wx:for="{{classifyData}}" 
+     wx:key="{{index}}" 
+     class="{{item.isChecked?'classIscheck':''}}"
+     bindtap='switchTab'
+     data-index='{{index}}'
+     >{{item.text}}</view>
+  </view>
+
+  
+  <view class='classify-right' 
+    wx:for="{{classifyContentData}}" 
+    wx:key="index"
+    wx:if="{{index == contentShowIndex}}"
+    >
+    <view class='banner'>
+      <image src='../../image/classify_banner1.png'></image>
+    </view>
+    
+    <view class='center-text'>
+      <text>{{item.navType}}</text>
+    </view>
+
+    <view class='product-list'>
+      <navigator
+        url="../productList/productList"
+        class='list-content'
+        wx:for="{{item.contentList}}"
+        wx:for-item="items" 
+        wx:key="{{ind}}"
+        hover-class='none'
+        >
+        <image src="{{items.productImage}}"></image>
+        <text>{{items.name}}　{{items.productNum}}</text>
+      </navigator> 
+    </view>
+  </view>
+</view>

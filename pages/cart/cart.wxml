@@ -1,0 +1,44 @@
+<!--pages/cart/cart.wxml-->
+<view class="cart-page">
+  <view class='cartList-box'>
+    <view 
+      class="cartList"
+      wx:for="{{cartTotalData}}"
+      wx:key="{{index}}">
+      <view class='icon-box' data-ind='{{index}}' bindtap='switchCheck'>
+        <icon wx:if="{{item.isChecked}}" type="success" size="20"></icon>
+      </view>  
+    
+      <view class='cartList-img-box'>
+        <image src="{{item.imageUrl}}"></image>
+      </view>
+
+      <view class='cartList-right'>
+
+        <view class='list-top'>{{item.name}}<text class='price'> ￥{{item.price}}</text></view>
+        <view class='list-middle'>
+          <text wx:for="{{item.classSelected}}" wx:for-item="childItem" wx:key="{{childIndex}}">{{childItem}}</text>
+        </view>
+        
+        <view class='list-bottom'>
+          <text class='minus' bindtap='cartProCount' data-count='-1' data-index='{{index}}'>-</text>
+          <text>{{item.needNum}}</text>
+          <text class='add' bindtap='cartProCount' data-count='1' data-index='{{index}}'>+</text>
+          <text class='del' bindtap='cartProCount' data-count='cancel' data-index='{{index}}'>×</text>
+        </view>
+
+      </view>
+    </view>
+  </view>
+  
+  <view class='cart-page-bottom'>
+    <view class='icon-box' bindtap='allCheckHandle'>
+      <icon type='{{iconTypeFlag?"success":"success_circle"}}'></icon>
+      全选
+    </view>
+    <view class='right-box'>
+      ￥{{cartTotalPrice}}
+      <navigator url='../pay/pay'><image src='../../image/icon3.png'></image></navigator>
+    </view>
+  </view>
+</view>
